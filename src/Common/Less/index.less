@@ -1,0 +1,41 @@
+/**
+ * @author v4 <lucky6616888@163.com>
+ * Created by v4 on 2019-07-03 10:12
+ */
+
+@font-12: 12px;
+@font-13: 13px;
+@font-14: 14px;
+@font-15: 15px;
+@font-16: 16px;
+@font-17: 17px;
+@font-18: 18px;
+@font-19: 19px;
+@font-20: 20px;
+@font-26: 26px;
+
+@theme-color: #4285dd;
+@text-color: #000;
+@not-data-color: #666;
+@body-bg-color: #f2f3f7;
+@color-white: white;
+
+@box-shadow-color: #dbdbdb;
+@active-color: red;
+@see-color: #33e463;
+@do-color: #25a6f1;
+@border-color: #e0e0e0;
+
+@table-header-color: #2a71cf;
+@table-header-bg-color: #daf6f6;
+//@table-header-bg-color: linear-gradient(#7989f2, #ffa826);
+@table-footer-color: #f69338;
+
+
+//  @2x、@3x 图片自动切换
+.bg-img(@url) {
+  background-image: url('@{url}@2x.png');
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+    background-image: url('@{url}@3x.png');
+  }
+}
